@@ -43,7 +43,7 @@
             this.lastYear.Name = "lastYear";
             this.lastYear.Size = new System.Drawing.Size(106, 17);
             this.lastYear.TabIndex = 0;
-            this.lastYear.Text = "Enter a number";
+            this.lastYear.Text = "# of contestants last year";
             // 
             // thisYear
             // 
@@ -51,6 +51,7 @@
             this.thisYear.Name = "thisYear";
             this.thisYear.Size = new System.Drawing.Size(100, 22);
             this.thisYear.TabIndex = 1;
+            this.thisYearLabel.Text = "# of contestants this year";
             // 
             // lastYearTxt
             // 
@@ -85,6 +86,7 @@
             this.final.Name = "final";
             this.final.Size = new System.Drawing.Size(0, 17);
             this.final.TabIndex = 5;
+            this.greaterLabel.Text = "final amt";
             // 
             // GreenvilleRevenueGUI
             // 
