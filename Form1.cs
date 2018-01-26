@@ -17,12 +17,12 @@ namespace GreenvilleRevenueGUI
             InitializeComponent();
         }
 
-        private void finalButton_Click(object sender, EventArgs e)
+        private void FinalButton_Click(object sender, EventArgs e) // uppercase first letter on method
         {
-            thisYear = Convert.ToDouble(thisYearTxt.Text);
-            lastYear = Convert.ToDouble(lastYearTxt.Text);
-            totalrev = thisYear * 25; 
-            totalrev1.Text=("Total revenue "+ totalrev.ToString("C"));
+            double thisYear = Convert.ToDouble(thisYearTxt.Text); // declaration of variable types
+            double lastYear = Convert.ToDouble(lastYearTxt.Text);
+            double totalRev = thisYear * 25; // camel casing on variable
+            totalRev1.Text=("Total revenue " + totalRev.ToString("C"));
            
             expectedRevenueLabel.Visible = true;
             greaterLabel.Visible = true;
@@ -30,3 +30,4 @@ namespace GreenvilleRevenueGUI
         }
     }
 }
+// double may not be neccesary since result will always be a multiple of 25, thus an int
