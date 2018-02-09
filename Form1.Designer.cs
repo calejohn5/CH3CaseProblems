@@ -1,6 +1,6 @@
-﻿namespace ch3_caseproblem
+﻿namespace Ch3_CaseProblem1
 {
-    partial class GreenvilleRevenueGUI
+    partial class GreenvilleRevGUI
     {
         /// <summary>
         /// Required designer variable.
@@ -28,79 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lastYear = new System.Windows.Forms.Label();
-            this.thisYear = new System.Windows.Forms.TextBox();
-            this.lastYearTxt = new System.Windows.Forms.Label();
-            this.thisYearTxt = new System.Windows.Forms.TextBox();
-            this.finalButton = new System.Windows.Forms.Button();
-            this.final = new System.Windows.Forms.Label();
+            this.lastYearLabel = new System.Windows.Forms.Label();
+            this.thisYearLabel = new System.Windows.Forms.Label();
+            this.lastYearTextBox = new System.Windows.Forms.TextBox();
+            this.thisYearTextBox = new System.Windows.Forms.TextBox();
+            this.resultsButton = new System.Windows.Forms.Button();
+            this.resultsLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lastYear
+            // lastYearLabel
             // 
-            this.lastYear.AutoSize = true;
-            this.lastYear.Location = new System.Drawing.Point(40, 58);
-            this.lastYear.Name = "lastYear";
-            this.lastYear.Size = new System.Drawing.Size(106, 17);
-            this.lastYear.TabIndex = 0;
-            this.lastYear.Text = "# of contestants last year";
+            this.lastYearLabel.AutoSize = true;
+            this.lastYearLabel.Location = new System.Drawing.Point(63, 14);
+            this.lastYearLabel.Name = "lastYearLabel";
+            this.lastYearLabel.Size = new System.Drawing.Size(165, 13);
+            this.lastYearLabel.TabIndex = 0;
+            this.lastYearLabel.Text = "Last year\'s number of contestants";
             // 
-            // thisYear
+            // thisYearLabel
             // 
-            this.thisYear.Location = new System.Drawing.Point(152, 58);
-            this.thisYear.Name = "thisYear";
-            this.thisYear.Size = new System.Drawing.Size(100, 22);
-            this.thisYear.TabIndex = 1;
-            this.thisYearLabel.Text = "# of contestants this year";
+            this.thisYearLabel.AutoSize = true;
+            this.thisYearLabel.Location = new System.Drawing.Point(63, 30);
+            this.thisYearLabel.Name = "thisYearLabel";
+            this.thisYearLabel.Size = new System.Drawing.Size(165, 13);
+            this.thisYearLabel.TabIndex = 1;
+            this.thisYearLabel.Text = "This year\'s number of contestants";
             // 
-            // lastYearTxt
+            // lastYearTextBox
             // 
-            this.lastYearTxt.AutoSize = true;
-            this.lastYearTxt.Location = new System.Drawing.Point(12, 94);
-            this.lastYearTxt.Name = "lastYearTxt";
-            this.lastYearTxt.Size = new System.Drawing.Size(136, 17);
-            this.lastYearTxt.TabIndex = 2;
-            this.lastYearTxt.Text = "Enter another number";
+            this.lastYearTextBox.Location = new System.Drawing.Point(234, 10);
+            this.lastYearTextBox.Name = "lastYearTextBox";
+            this.lastYearTextBox.Size = new System.Drawing.Size(100, 20);
+            this.lastYearTextBox.TabIndex = 2;
             // 
-            // thisYearTxt
+            // thisYearTextBox
             // 
-            this.thisYearTxt.Location = new System.Drawing.Point(155, 94);
-            this.thisYearTxt.Name = "thisYearTxt";
-            this.thisYearTxt.Size = new System.Drawing.Size(100, 22);
-            this.thisYearTxt.TabIndex = 3;
+            this.thisYearTextBox.Location = new System.Drawing.Point(234, 30);
+            this.thisYearTextBox.Name = "thisYearTextBox";
+            this.thisYearTextBox.Size = new System.Drawing.Size(100, 20);
+            this.thisYearTextBox.TabIndex = 3;
             // 
-            // finalButton
+            // resultsButton
             // 
-            this.finalButton.Location = new System.Drawing.Point(43, 151);
-            this.finalButton.Name = "finalButton";
-            this.finalButton.Size = new System.Drawing.Size(106, 23);
-            this.finalButton.TabIndex = 4;
-            this.finalButton.Text = "Calculate";
-            this.finalButton.UseVisualStyleBackColor = true;
-            this.finalButton.Click += new System.EventHandler(this.finalButton_Click);
+            this.resultsButton.BackColor = System.Drawing.Color.Silver;
+            this.resultsButton.ForeColor = System.Drawing.Color.Black;
+            this.resultsButton.Location = new System.Drawing.Point(162, 76);
+            this.resultsButton.Name = "resultsButton";
+            this.resultsButton.Size = new System.Drawing.Size(110, 66);
+            this.resultsButton.TabIndex = 4;
+            this.resultsButton.Text = "Get Revenue(s)";
+            this.resultsButton.UseVisualStyleBackColor = false;
+            this.resultsButton.Click += new System.EventHandler(this.ResultsButton_Click);
             // 
-            // final
+            // resultsLabel
             // 
-            this.final.AutoSize = true;
-            this.final.Location = new System.Drawing.Point(166, 156);
-            this.final.Name = "final";
-            this.final.Size = new System.Drawing.Size(0, 17);
-            this.final.TabIndex = 5;
-            this.greaterLabel.Text = "final amt";
+            this.resultsLabel.AutoSize = true;
+            this.resultsLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultsLabel.Location = new System.Drawing.Point(12, 163);
+            this.resultsLabel.Name = "resultsLabel";
+            this.resultsLabel.Size = new System.Drawing.Size(248, 18);
+            this.resultsLabel.TabIndex = 5;
+            this.resultsLabel.Text = "Results will appear here";
             // 
-            // GreenvilleRevenueGUI
+            // label1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "the big message is here";
+            this.label1.Visible = false;
+            // 
+            // GreenvilleRevGUI
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
-            this.Controls.Add(this.final);
-            this.Controls.Add(this.finalButton);
-            this.Controls.Add(this.thisYearTxt);
-            this.Controls.Add(this.lastYearTxt);
-            this.Controls.Add(this.thisYear);
-            this.Controls.Add(this.lastYear);
-            this.Name = "GreenVille RevenueGUI";
-            this.Text = "Calculate your revenue";
+            this.ClientSize = new System.Drawing.Size(477, 323);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.resultsLabel);
+            this.Controls.Add(this.resultsButton);
+            this.Controls.Add(this.thisYearTextBox);
+            this.Controls.Add(this.lastYearTextBox);
+            this.Controls.Add(this.thisYearLabel);
+            this.Controls.Add(this.lastYearLabel);
+            this.Name = "GreenvilleRevGUI";
+            this.Text = "Greenville Revenue Estimator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,11 +123,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lastYear;
-        private System.Windows.Forms.TextBox thisYear;
-        private System.Windows.Forms.Label lastYearTxt;
-        private System.Windows.Forms.TextBox thisYearTxt;
-        private System.Windows.Forms.Button finalButton;
-        private System.Windows.Forms.Label final;
+        private System.Windows.Forms.Label lastYearLabel;
+        private System.Windows.Forms.Label thisYearLabel;
+        private System.Windows.Forms.TextBox lastYearTextBox;
+        private System.Windows.Forms.TextBox thisYearTextBox;
+        private System.Windows.Forms.Button resultsButton;
+        private System.Windows.Forms.Label resultsLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
+
